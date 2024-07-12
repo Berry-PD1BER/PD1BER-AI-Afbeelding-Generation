@@ -1,0 +1,32 @@
+name = "ai-img-engine"
+main = "src/index.ts"
+compatibility_date = "2024-02-24"
+workers_dev = false
+account_id = "your_account_id" # INSERT VALUE
+compatibility_flags = [ "nodejs_compat" ]
+
+[placement]
+mode = "smart"
+
+[[routes]]
+pattern = "your.domain" # INSERT VALUE
+zone_name = "zone.name.from.cloudflare" # INSERT VALUE
+custom_domain = true
+
+[ai]
+binding = "AI"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "" # INSERT VALUE
+database_id = "" # INSERT VALUE
+
+[[r2_buckets]]
+binding = "S3"
+preview_bucket_name = "" # INSERT VALUE
+bucket_name = "" # INSERT VALUE
+
+[vars]
+CLOUDFLARE_AI_ENABLED = true
+OPEN_AI_KEY = ""
+OPEN_AI_ENABLED = false
