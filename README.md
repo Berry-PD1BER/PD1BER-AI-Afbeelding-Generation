@@ -1,4 +1,4 @@
-# Cloudflare Ai Generation
+# PD1BER Ai Image Generation
 
 ## Overview
 This project is a simple web application that utilizes Cloudflare Workers for the backend and Preact for the frontend. Cloudflare Workers provide serverless compute environments that enable developers to deploy code at the edge of Cloudflare's network, closer to users, which can significantly improve performance and reduce latency. Preact, a lightweight alternative to React, is used for building fast and efficient user interfaces.
